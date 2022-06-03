@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  bottom: 0;
+}
+
+.todo_add {
+  padding-top: 50px;
+}
+
+.todo__add_container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: rgb(169, 179, 206);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.todo__add_container h2 {
+  color: rgb(223, 223, 223);
+}
+
+.add__form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.add__form input {
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 800px;
+  background-color: inherit;
+  border: none;
+  border-bottom: 3px solid rgb(165, 112, 112);
+  padding: 10px 10px;
+}
+
+.main__button {
+  margin-top: 20px;
+  width: 700px;
+  cursor: pointer;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: rgb(223, 223, 223);
+  outline: none;
+}
+
+/* 
+
+
+*/
+
+.todo__wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.todo__main {
+  margin: 30px 0 0 0;
+  width: 33%;
+}
+
+.todo__main_container {
+  /* max-width: 1050px; */
+  min-height: 150px;
+  /* margin: 0 auto; */
+  background: rgb(209, 215, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.todo__main_container h2 {
+  color: rgb(138, 136, 136);
+}
+
+.main__items {
+  display: none;
+}
+
+.main__btn {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  outline: none;
+}
+
+.error_text {
+  display: none;
+  color: red;
+  text-align: center;
+}
+
+.main__text {
+  font-size: 25px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.active {
+  max-width: 800px;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.active div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.clear__btn {
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: rgb(138, 136, 136);
+  outline: none;
+}
+
+.todo__done p {
+  text-decoration: line-through;
+}
+
+.todo__done div {
+  background-color: rgb(209, 215, 238) !important;
+  border: 1px solid turquoise !important;
+  border-radius: 10px !important;
+  padding: 10px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.todo__active div {
+  background-color: rgb(209, 215, 238) !important;
+  border: 2px solid rgb(64, 224, 77) !important;
+  border-radius: 10px !important;
+  padding: 10px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.todo__default div:first-of-type {
+  background-color: rgb(209, 215, 238) !important;
+  border: 2px solid rgb(255, 255, 255) !important;
+  border-radius: 10px !important;
+  padding: 10px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.item__row {
+  display: flex;
+  justify-content: space-between;
+}

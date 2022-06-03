@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/todoVan.css" />
+    <title>todoVanilla</title>
+  </head>
+  <body>
+    <div class="todo__add">
+      <div class="todo__add_container">
+        <h2>Add Grocery Item</h2>
+        <form class="add__form">
+          <input type="text" name="input_item" class="inp" />
+          <p class="error_text">Passed unvalid data or data is empty</p>
+          <button type="submit" class="main__button">Submit Here</button>
+        </form>
+      </div>
+    </div>
+    <div class="todo__wrapper">
+      <div class="todo__main">
+        <div class="todo__main_container todo__default">
+          <h2>Grocery Items</h2>
+          <div
+            id="draggable-1"
+            ondragstart="onDragStart(event);"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+            class="main__items"
+          ></div>
+          <div class="add__form">
+            <button class="clear__btn" type="submit">Clear Items</button>
+          </div>
+        </div>
+      </div>
+      <div class="todo__main">
+        <div class="todo__main_container todo__active">
+          <h2>Grocery Items - Active</h2>
+          <div
+            class="active__one"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          >
+            перетащите файлы сюда
+          </div>
+        </div>
+      </div>
+      <div class="todo__main">
+        <div class="todo__main_container todo__done">
+          <h2>Grocery Items - Done</h2>
+          <div
+            class="active__two"
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+          >
+            перетащите файлы сюда
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/todoVan.js"></script>
+  </body>
+</html>
